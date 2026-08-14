@@ -1,267 +1,245 @@
-Celestial Gist — index.html
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Celestial Gist</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Celestial Gist - News, entertainment, media and updates.">
+<title>CELESTIAL GIST TV</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<link rel="stylesheet" href="style.css">
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-            line-height: 1.6;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-        header {
-            background: #111;
-            color: white;
-            padding: 15px 5%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        .logo img {
-            width: 55px;
-            height: 55px;
-            object-fit: contain;
-            border-radius: 50%;
-        }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-        .logo h1 {
-            font-size: 24px;
-        }
-
-        nav {
-            display: flex;
-            gap: 18px;
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, #111, #333);
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .hero h2 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            max-width: 650px;
-            margin: auto;
-        }
-
-        .button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background: #ffd700;
-            color: #111;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-
-        .section {
-            padding: 50px 5%;
-            max-width: 1100px;
-            margin: auto;
-        }
-
-        .section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 30px;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        }
-
-        .card h3 {
-            margin-bottom: 10px;
-        }
-
-        .about {
-            text-align: center;
-            background: white;
-        }
-
-        .social {
-            text-align: center;
-        }
-
-        .social a {
-            display: inline-block;
-            margin: 8px;
-            padding: 12px 18px;
-            background: #111;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-        }
-
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 30px;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                justify-content: center;
-                text-align: center;
-            }
-
-            nav {
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-
-            .hero h2 {
-                font-size: 32px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <header>
-        <div class="logo">
-            <img src="logo.png" alt="Celestial Gist Logo">
-            <h1>Celestial Gist</h1>
-        </div>
+<header>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<nav class="navbar">
 
-    <section class="hero" id="home">
-        <h2>Welcome to Celestial Gist</h2>
+<div class="logo">
 
-        <p>
-            Your source for the latest news, entertainment,
-            trending stories and exciting updates.
-        </p>
+<img src="images/logo.png">
 
-        <a href="#news" class="button">Explore Latest Gist</a>
-    </section>
+<h2>CELESTIAL GIST TV</h2>
 
-    <section class="section" id="news">
-        <h2>Latest Updates</h2>
+</div>
 
-        <div class="cards">
+<ul class="nav-links">
 
-            <div class="card">
-                <h3>📰 Latest News</h3>
-                <p>
-                    Stay updated with important news and trending
-                    stories from around the world.
-                </p>
-            </div>
+<li><a href="#home">Home</a></li>
 
-            <div class="card">
-                <h3>🎬 Entertainment</h3>
-                <p>
-                    Get the latest entertainment news, celebrity
-                    updates, videos and exciting stories.
-                </p>
-            </div>
+<li><a href="#about">About</a></li>
 
-            <div class="card">
-                <h3>🔥 Trending Gist</h3>
-                <p>
-                    Discover what's trending and join the conversation
-                    with Celestial Gist.
-                </p>
-            </div>
+<li><a href="#gallery">Gallery</a></li>
 
-        </div>
-    </section>
+<li><a href="#updates">Latest Updates</a></li>
 
-    <section class="section about" id="about">
-        <h2>About Celestial Gist</h2>
+<li><a href="#prayer">Prayer Request</a></li>
 
-        <p>
-            Celestial Gist is a media and entertainment platform
-            bringing you news, entertainment, trending stories
-            and interesting updates.
-        </p>
-    </section>
+<li><a href="#contact">Contact</a></li>
 
-    <section class="section social" id="contact">
-        <h2>Follow Celestial Gist</h2>
+</ul>
 
-        <p>Connect with us on social media.</p>
+<div class="menu-btn">
 
-        <!-- Replace the links below with your real profile links -->
+<i class="fas fa-bars"></i>
 
-        <a href="https://www.tiktok.com/" target="_blank">
-            TikTok
-        </a>
+</div>
 
-        <a href="https://www.facebook.com/" target="_blank">
-            Facebook
-        </a>
+</nav>
 
-        <a href="https://www.youtube.com/" target="_blank">
-            YouTube
-        </a>
-    </section>
+<section id="home" class="hero">
 
-    <footer>
-        <p>©️ 2026 Celestial Gist. All Rights Reserved.</p>
-    </footer>
+<div class="hero-text">
+
+<h1>Welcome To CELESTIAL GIST TV</h1>
+
+<p>
+
+Your Home For Celestial Church News,
+
+Inspirational Messages,
+
+Events,
+
+Media Coverage,
+
+and Gospel Updates.
+
+</p>
+
+<a href="#about" class="btn">
+
+Explore More
+
+</a>
+
+</div>
+
+</section>
+
+</header>
+
+<section id="about" class="about">
+
+<h2>About Us</h2>
+
+<p>
+
+CELESTIAL GIST TV is a digital gospel media platform dedicated to spreading the Good News through videos, photography, live events, church updates, testimonies, inspirational messages and quality Christian content.
+
+</p>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="images/gallery1.jpg">
+
+<img src="images/gallery2.jpg">
+
+<img src="images/gallery3.jpg">
+
+<img src="images/gallery4.jpg">
+
+<img src="images/gallery5.jpg">
+
+<img src="images/gallery6.jpg">
+
+</div>
+
+</section>
+
+<section id="updates" class="updates">
+
+<h2>Latest Updates</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Weekly Revival</h3>
+
+<p>Join our live worship service every Friday.</p>
+
+</div>
+
+<div class="card">
+
+<h3>New Video Uploaded</h3>
+
+<p>Watch inspiring messages on YouTube.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Church Event</h3>
+
+<p>Stay informed about upcoming programs.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="prayer" class="prayer">
+
+<h2>Prayer Request</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<textarea placeholder="Write your prayer request"></textarea>
+
+<button type="submit">
+
+Send Prayer Request
+
+</button>
+
+</form>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>
+
+<i class="fas fa-phone"></i>
+
+09052524314
+
+</p>
+
+<p>
+
+<i class="fab fa-whatsapp"></i>
+
+09052524314
+
+</p>
+
+<p>
+
+<i class="fas fa-envelope"></i>
+
+celestialgisttv@gmail.com
+
+</p>
+
+<div class="socials">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+<a href="#"><i class="fab fa-tiktok"></i></a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 CELESTIAL GIST TV.
+
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<a href="https://wa.me/2349052524314" class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
